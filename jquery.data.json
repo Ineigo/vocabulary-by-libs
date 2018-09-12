@@ -1,0 +1,1405 @@
+{
+    "Селекторы": {
+        "Базовые": [
+            {
+                "name": "#id",
+                "help": "Ищет элемент страницы с заданным идентификатором.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%83"
+            },
+            {
+                "name": ".class",
+                "help": "Ищет элементы страницы, принадлежащие заданному классу.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%83"
+            },
+            {
+                "name": "tagName",
+                "help": "Ищет элементы страницы по имени тега.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%20%D1%82%D0%B5%D0%B3%D0%B0"
+            },
+            {
+                "name": "*",
+                "help": "Ищет все элементы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%B2%D1%81%D0%B5%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            }
+        ],
+        "Взаимодействия": [
+            {
+                "name": "first, second, ...",
+                "help": "Ищет элементы страницы, которые удовлетворяют хотя бы одному из селекторов first, second, ...",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%BE%D0%B2%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B"
+            },
+            {
+                "name": "outer inner",
+                "help": "Ищет элементы, удовлетворяющие селектору inner, внутри элементов, удовлетворяющих outer.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9D%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B"
+            },
+            {
+                "name": "parent > child",
+                "help": "Ищет элементы, удовлетворяющие селектору child, которые при этом являются прямыми потомками элементов, удовлетворяющих parent.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D1%87%D0%B5%D1%80%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B"
+            },
+            {
+                "name": "prev + next",
+                "help": "Ищет элементы, удовлетворяющие селектору next, которые следуют непосредственно за элементами, удовлетворяющими prev.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%BC%D0%B5%D0%B6%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B"
+            },
+            {
+                "name": "prev ~ next",
+                "help": "Ищет элементы, удовлетворяющие селектору next, которые следуют за элементами, удовлетворяющими prev.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%B5%20%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B"
+            }
+        ],
+        "По атрибутам": [
+            {
+                "name": "[name]",
+                "help": "Ищет элементы, содержащие атрибут name",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D1%8E%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0"
+            },
+            {
+                "name": "[name = value]",
+                "help": "Ищет элементы, у которых значение атрибута name совпадает с value.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0"
+            },
+            {
+                "name": "[name != value]",
+                "help": "Ищет элементы, у которых значение атрибута name не совпадает с value.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BD%D0%B5%D1%81%D0%BE%D0%B2%D0%BF%D0%B0%D0%B4%D0%B5%D0%BD%D0%B8%D1%8E%20%D1%81%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%BE%D0%BC"
+            },
+            {
+                "name": "[name ^= value]",
+                "help": "Ищет элементы, у которых значение атрибута name начинается с value.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%83%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0"
+            },
+            {
+                "name": "[name $= value]",
+                "help": "Ищет элементы, у которых значение атрибута name заканчивается на value.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BA%D0%BE%D0%BD%D1%86%D1%83%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0"
+            },
+            {
+                "name": "[name *= value]",
+                "help": "Ищет элементы, у которых значение атрибута name содержит подстроку value.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B5%20%D0%B2%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B5"
+            },
+            {
+                "name": "[name ~= value]",
+                "help": "Ищет элементы, у которых значение атрибута name содержит слово value.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D1%81%D0%BB%D0%BE%D0%B2%D1%83%20%D0%B2%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B5"
+            },
+            {
+                "name": "[name |= value]",
+                "help": "Ищет элементы, у которых значение атрибута name имеют префикс value (равен value или имеет вид: \"value-*\").",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%B5%D1%84%D0%B8%D0%BA%D1%81%D1%83%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0"
+            },
+            {
+                "name": "[first][second][...",
+                "help": "Ищет элементы, соответствующие всем заданным условиям на атрибуты одновременно.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D0%BC%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0%D0%BC"
+            }
+        ],
+        "Простые фильтры": [
+            {
+                "name": ":first",
+                "help": "Оставляет первый из найденных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9%20%D0%BD%D0%B0%D0%B9%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82"
+            },
+            {
+                "name": ":last",
+                "help": "Оставляет последний найденных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9%20%D0%BD%D0%B0%D0%B9%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82"
+            },
+            {
+                "name": ":eq(index)",
+                "help": "Соответствует элементу, идущего под номером index в наборе выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BF%D0%BE%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D1%83"
+            },
+            {
+                "name": ":not(selector)",
+                "help": "Исключает из найденных элементов те, которые удовлетворяют селектору selector.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BD%D0%B0%D0%B9%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ":even",
+                "help": "Оставляет только четные найденные элементы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A7%D0%B5%D1%82%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":odd",
+                "help": "Оставляет только нечетные найденные элементы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9D%D0%B5%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":gt(n)",
+                "help": "Оставляет только те найденные элементы, чей индекс превосходит n.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D1%81%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20n"
+            },
+            {
+                "name": ":lt(n)",
+                "help": "Оставляет только те найденные элементы, чей индекс не превосходит n.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D1%81%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC%20%D0%B4%D0%BE%20n"
+            },
+            {
+                "name": ":header",
+                "help": "Оставляет только те найденные элементы, которые являются заголовками (с тегами h1, h2 и.т.д.).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8"
+            },
+            {
+                "name": ":animated",
+                "help": "Оставляет те найденные элементы, которые в данный момент задействованы в анимации.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%90%D0%BD%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":hidden",
+                "help": "Оставляет только невидимые элементы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":visible",
+                "help": "Соответствует элементам, в которых указан подходящий язык содержимого. В параметре language указывается код языка.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D0%B8%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":lang()",
+                "help": "Оставляет только видимые элементы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D1%81%20%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%BC%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE"
+            }
+        ],
+        "Фильтры дочерних \nэлементов": [
+            {
+                "name": ":first-child",
+                "help": "Оставляет те найденные элементы, которые расположены первыми в своих родительских элементах.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            },
+            {
+                "name": ":last-child",
+                "help": "Оставляет те найденные элементы, которые расположены последними в своих родительских элементах.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            },
+            {
+                "name": ":nth-child(conditions)",
+                "help": "Оставляет те найденные элементы, которые расположены определенным образом в родительских элементах (четные, нечетные, идущие под заданным номером).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            },
+            {
+                "name": ":nth-child-last(conditions)",
+                "help": "Оставляет те найденные элементы, которые расположены определенным образом в родительских элементах (четные, нечетные, идущие под заданным номером).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            },
+            {
+                "name": ":only-child",
+                "help": "Оставляет те найденные элементы, которые являются единственными потомками в своих родительских элементах.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%95%D0%B4%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            },
+            {
+                "name": ":first-of-type",
+                "help": "Фильтрует набор выбранных элементов, оставляя только те элементы, которые первыми будут встречены в своих родителях.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            },
+            {
+                "name": ":last-of-type",
+                "help": "Фильтрует набор выбранных элементов, оставляя только те элементы, которые последними будут встречены в своих родителях.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B8%D1%85%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D1%85"
+            }
+        ],
+        "Фильтры по содержимому": [
+            {
+                "name": ":contains(text)",
+                "help": "Оставляет те найденные элементы, которые содержат заданный текст.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83"
+            },
+            {
+                "name": ":empty",
+                "help": "Оставляет те найденные элементы, у которых нет содержимого (текста и других элементов).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BE%D1%82%D1%81%D1%83%D1%82%D1%81%D1%82%D0%B2%D0%B8%D1%8F%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE"
+            },
+            {
+                "name": ":has(selector)",
+                "help": "Оставляет те найденные элементы, которые содержат внутри хотя бы один элемент, удовлетворяющий селектору selector.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ":parent",
+                "help": "Оставляет непустые элементы из всех найденных.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D1%8F%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE"
+            }
+        ],
+        "Фильтры форм": [
+            {
+                "name": ":input",
+                "help": "Оставляет только те найденные элементы, которые являются элементами формы (с тегами input, textarea или button).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B"
+            },
+            {
+                "name": ":button",
+                "help": "Оставляет только те найденные элементы, которые являются кнопками (с тегом button или типом button).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8"
+            },
+            {
+                "name": ":radio",
+                "help": "Оставляет только те найденные элементы, которые являются переключателями.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D0%B8"
+            },
+            {
+                "name": ":checkbox",
+                "help": "Оставляет только те найденные элементы, которые являются флажками.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%84%D0%BB%D0%B0%D0%B6%D0%BA%D0%B8"
+            },
+            {
+                "name": ":text",
+                "help": "Оставляет только те найденные элементы, которые являются текстовыми полями.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%8F"
+            },
+            {
+                "name": ":password",
+                "help": "Оставляет только те найденные элементы, которые являются полями ввода пароля.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8F%20%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0%20%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8F"
+            },
+            {
+                "name": ":file",
+                "help": "Оставляет только те найденные элементы, которые являются полями загрузки файлов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2"
+            },
+            {
+                "name": ":submit",
+                "help": "Оставляет только те найденные элементы, которые являются кнопками отправки формы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8%20%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B"
+            },
+            {
+                "name": ":reset",
+                "help": "Оставляет только те найденные элементы, которые являются кнопками очистки формы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8%20%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B"
+            },
+            {
+                "name": ":image",
+                "help": "Оставляет только те найденные элементы, которые являются изображениями для отправки формы (input типа image).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B"
+            },
+            {
+                "name": ":focus",
+                "help": "Оставляет найденные элементы, находящиеся в данный момент в фокусе.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B2%20%D1%84%D0%BE%D0%BA%D1%83%D1%81%D0%B5"
+            },
+            {
+                "name": ":selected",
+                "help": "Оставляет найденные элементы со статусом selected. Это могут быть элементы типа <option>.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B2%D1%8B%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":checked",
+                "help": "Оставляет найденные элементы со статусом checked. Это могут быть элементы типа <checkbox> или <radio>.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ":enabled",
+                "help": "Из всех выбранных элементов, оставляет только активные элементы формы (со статусом enabled).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B"
+            },
+            {
+                "name": ":disabled",
+                "help": "Из всех выбранных элементов, оставляет только неактивные элементы формы (со статусом disabled).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BD%D0%B5%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B"
+            }
+        ]
+    },
+    "События": {
+        "Базовые": [
+            {
+                "name": ".on()",
+                "help": "Устанавливает обработчик события на выбранные элементы страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/On"
+            },
+            {
+                "name": ".bind()",
+                "help": "Устанавливает обработчик события на выбранные элементы страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9"
+            },
+            {
+                "name": ".live()",
+                "help": "Устанавливает обработчик события на выбранные элементы страницы. Обработчик сработает и на элементах, появившихся после его установки.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D1%83%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9"
+            },
+            {
+                "name": ".delegate()",
+                "help": "Устанавливает обработчик события на выбранные элементы страницы. Элементы выбираются с помощью уточняющего селектора. Обработчик будет действовать и на элементах, появившихся после его установки.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%BC"
+            },
+            {
+                "name": ".one()",
+                "help": "Устанавливает обработчик события на выбранные элементы страницы, который сработает только по одному разу, на каждом из элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9"
+            },
+            {
+                "name": ".unbind()",
+                "help": "Удаляет обработчик событий у выбранных элементов страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9"
+            },
+            {
+                "name": ".off()",
+                "help": "Удаляет обработчик событий (установленные с помощью метода .on()) у выбранных элементов страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/Off"
+            },
+            {
+                "name": ".die()",
+                "help": "Удаляет обработчик событий, который был установлен с помощью live().",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9"
+            },
+            {
+                "name": ".undelegate()",
+                "help": "Удаляет обработчик событий, который был установлен с помощью delegate().",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%BC"
+            },
+            {
+                "name": ".trigger()",
+                "help": "Выполняет указанное событие и запускает его обработчик.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%8B%D0%B7%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F"
+            },
+            {
+                "name": ".triggerHandler()",
+                "help": "Запускает обработчик указанного события, без выполнения самого события.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%8B%D0%B7%D0%BE%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0"
+            },
+            {
+                "name": "jQuery.proxy()",
+                "help": "По заданной функции, создает другую, внутри которой переменная this будет равна заданному значению.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8"
+            },
+            {
+                "name": "event",
+                "help": "Объект, содержащий данные о текущем событии. Передается всем обработчикам событий.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%20event"
+            }
+        ],
+        "Мышь": [
+            {
+                "name": ".click()",
+                "help": "Устанавливает обработчик \"клика\" мышью по элементу, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20click"
+            },
+            {
+                "name": ".dblclick()",
+                "help": "Устанавливает обработчик двойного \"клика\" мышью по элементу, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20dblclick"
+            },
+            {
+                "name": ".hover()",
+                "help": "Устанавливает обработчик двух событий: появления/исчезновения курсора над элементом.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20hover"
+            },
+            {
+                "name": ".mousedown()",
+                "help": "Устанавливает обработчик нажатия кнопки мыши, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20mousedown"
+            },
+            {
+                "name": ".mouseup()",
+                "help": "Устанавливает обработчик поднятия кнопки мыши, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20mouseup"
+            },
+            {
+                "name": ".mouseenter()",
+                "help": "Устанавливает обработчик появления курсора в области элемента, либо, запускает это событие. Появление этого события, отработано лучше, чем стандартного mouseover.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%B0%20%D0%BD%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B5"
+            },
+            {
+                "name": ".mouseleave()",
+                "help": "Устанавливает обработчик выхода курсора из области элемента, либо, запускает это событие. Появление этого события, отработано лучше, чем стандартного mouseout.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B0%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%B0%20%D0%B8%D0%B7%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".mousemove()",
+                "help": "Устанавливает обработчик движения курсора в области элемента, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20mousemove"
+            },
+            {
+                "name": ".mouseout()",
+                "help": "Устанавливает обработчик выхода курсора из области элемента, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20mouseout"
+            },
+            {
+                "name": ".mouseover()",
+                "help": "Устанавливает обработчик появления курсора в области элемента, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20mouseover"
+            },
+            {
+                "name": ".toggle()",
+                "help": "Поочередно выполняет одну из двух или более заданных функций, в ответ на \"клик\" по элементу.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9"
+            }
+        ],
+        "Клавиатура": [
+            {
+                "name": ".keydown()",
+                "help": "Устанавливает обработчик перехода клавиши клавиатуры в нажатое состояние, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20keydown"
+            },
+            {
+                "name": ".keyup()",
+                "help": "Устанавливает обработчик возвращение клавиши клавиатуры в ненажатое состояние, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20keyup"
+            },
+            {
+                "name": ".keypress()",
+                "help": "Устанавливает обработчик ввода символа с клавиатуры, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20keypress"
+            }
+        ],
+        "Элементы формы": [
+            {
+                "name": ".focus()",
+                "help": "Устанавливает обработчик получения фокуса, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20focus"
+            },
+            {
+                "name": ".blur()",
+                "help": "Устанавливает обработчик потери фокуса, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20blur"
+            },
+            {
+                "name": ".focusin()",
+                "help": "Устанавливает обработчик получения фокуса самим элементом или одним из его дочерних.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20focusin"
+            },
+            {
+                "name": ".focusout()",
+                "help": "Устанавливает обработчик получения фокуса самим элементом или одним из его дочерних.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20focusout"
+            },
+            {
+                "name": ".select()",
+                "help": "Устанавливает обработчик выделения текста, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20select"
+            },
+            {
+                "name": ".submit()",
+                "help": "Устанавливает обработчик отправки формы, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20submit"
+            },
+            {
+                "name": ".change()",
+                "help": "Устанавливает обработчик изменения элемента формы, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20change"
+            }
+        ],
+        "Загрузка страницы": [
+            {
+                "name": ".ready()",
+                "help": "Устанавливает обработчик готовности дерева DOM.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%20DOM"
+            },
+            {
+                "name": ".load()",
+                "help": "Устанавливает обработчик завершения загрузки элемента.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20load"
+            },
+            {
+                "name": ".unload()",
+                "help": "Устанавливает обработчик ухода со страницы (при переходе по ссылке, закрытии браузера и.т.д.).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20unload"
+            }
+        ],
+        "События браузера": [
+            {
+                "name": ".error()",
+                "help": "Устанавливает обработчик ошибки при загрузке элементов (например отсутствие необходимой картинки на сервере).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20error"
+            },
+            {
+                "name": ".resize()",
+                "help": "Устанавливает обработчик изменения размеров окна браузера, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20resize"
+            },
+            {
+                "name": ".scroll()",
+                "help": "Устанавливает обработчик \"прокрутки\" элементов документа, либо, запускает это событие.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%20scroll"
+            }
+        ]
+    },
+    "Работа с набором элементов": {
+        "Перемещения по DOM": [
+            {
+                "name": ".children()",
+                "help": "Находит все дочерние элементы у выбранных элементов. При необходимости, можно указать селектор для фильтрации.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%B4%D0%BE%D1%87%D0%B5%D1%80%D0%BD%D0%B8%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".closest()",
+                "help": "Находит ближайший, соответствующий заданному селектору элемент, из числа следующих: сам выбранный элемент, его родитель, его прародитель, и так далее, до начало дерева DOM.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%91%D0%BB%D0%B8%D0%B6%D0%B0%D0%B9%D1%88%D0%B8%D0%B9%20%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B9%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D0%BA"
+            },
+            {
+                "name": ".find()",
+                "help": "Находит элементы по заданному селектору, внутри выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": ".next()",
+                "help": "Находит элементы, которые лежат '''непосредственно''' после каждого из выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": ".nextAll()",
+                "help": "Находит элементы, которые лежат после каждого из выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%B2%D1%81%D0%B5%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": ".nextUntil()",
+                "help": "Находит элементы, которые лежат после каждого из выбранных, но не дальше элемента, удовлетворяющего заданному селектору.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%87%D0%B0%D1%81%D1%82%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": ".offsetParent()",
+                "help": "Находит ближайшего предка c позиционированием, отличным от static (позиционирование по умолчанию).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ".parent()",
+                "help": "Находит родительские элементы у всех выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".parents()",
+                "help": "Находит всех предков у выбранных элементов, т.е. не только прямых родителей, но и прародителей, прапрародителей и так далее, до начало дерева DOM.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BA%D0%BE%D0%B2"
+            },
+            {
+                "name": ".parentsUntil()",
+                "help": "Находит предков, как и .parents(), но прекращает поиск перед элементом, удовлетворяющим заданному селектору.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BF%D0%BE%D1%87%D1%82%D0%B8%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BA%D0%BE%D0%B2"
+            },
+            {
+                "name": ".prev()",
+                "help": "Находит элементы, которые лежат '''непосредственно''' перед каждым из выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8"
+            },
+            {
+                "name": ".prevAll()",
+                "help": "Находит элементы, которые лежат перед каждым из выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%B2%D1%81%D0%B5%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8"
+            },
+            {
+                "name": ".prevUntil()",
+                "help": "Находит элементы, которые лежат перед каждым из выбранных, но не дальше элемента, соответствующего заданному селектору.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%87%D0%B0%D1%81%D1%82%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8"
+            },
+            {
+                "name": ".siblings()",
+                "help": "Находит все соседние элементы (под соседними понимаются элементы с общим родителем).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B8%D1%85%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5"
+            }
+        ],
+        "Обход набора": [
+            {
+                "name": ".each()",
+                "help": "Вызывает заданную функцию для каждого элемента набора.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%8B%D0%B7%D0%BE%D0%B2%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B0"
+            },
+            {
+                "name": ".map()",
+                "help": "Вызывает заданную функцию для каждого элемента набора, и в итоге создает новый набор, составленный из значений, возвращенных этой функцией.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D1%81%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B0"
+            }
+        ],
+        "Фильтрация набора": [
+            {
+                "name": ".eq()",
+                "help": "Находит элемент, идущий под заданным номером в наборе выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D1%81%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BE%D0%BC"
+            },
+            {
+                "name": ".filter()",
+                "help": "Фильтрует набор выбранных элементов с помощью заданного селектора или функции.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".first()",
+                "help": "Находит первый элемент в наборе.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B5"
+            },
+            {
+                "name": ".has()",
+                "help": "Фильтрует набор выбранных элементов, оставляя те, которые имеют потомков, соответствующих селектору.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%81%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D1%8B%D0%BC"
+            },
+            {
+                "name": ".is()",
+                "help": "Проверяет, содержится ли в наборе, хотя бы один элемент удовлетворяющий заданному селектору.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".last()",
+                "help": "Находит последний элемент в наборе.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B5"
+            },
+            {
+                "name": ".not()",
+                "help": "Находит элементы, не соответствующие заданным условиям.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BD%D0%B5%20%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%89%D0%B8%D1%85%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D0%BC"
+            },
+            {
+                "name": ".slice()",
+                "help": "Находит элементы с индексами из определенной области (например от 0 до 5).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%81%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0%D0%BC%D0%B8%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8"
+            }
+        ],
+        "Другие методы": [
+            {
+                "name": ".add()",
+                "help": "Добавляет заданные элементы в набор.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B2%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80"
+            },
+            {
+                "name": ".andSelf()",
+                "help": "Добавляет элементы из предыдущего набора, к текущему (речь идет об одной цепочке методов).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%B5%D0%B4%D1%8B%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B0"
+            },
+            {
+                "name": ".contents()",
+                "help": "Находит все дочерние элементы у выбранных элементов. В результат, помимо элементов, включается и текст.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%89%D0%B8%D1%85%D1%81%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".end()",
+                "help": "Возвращает предыдущий набор элементов в текущей цепочке методов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%B5%D0%B4%D1%8B%D0%B4%D1%83%D1%89%D0%B8%D0%B9%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            }
+        ]
+    },
+    "Эффекты": {
+        "Управление анимацией": [
+            {
+                "name": ".animate()",
+                "help": "Выполняет анимацию, которая была создана пользователем.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8"
+            },
+            {
+                "name": ".queue()",
+                "help": "Предоставляет/изменяет (в зависимости от параметров) очередь функций.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B8%D1%85%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": ".clearQueue()",
+                "help": "Очищает очередь функций.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D1%87%D0%B8%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": ".dequeue()",
+                "help": "Начинает выполнение следующей функции в очереди.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA%20%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B5%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B2%20%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B8"
+            },
+            {
+                "name": ".stop()",
+                "help": "Останавливает выполнение текущей анимации.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B9%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8"
+            },
+            {
+                "name": ".delay()",
+                "help": "Приостанавливает выполнение следующих анимаций на заданное время.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%B8%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": ".toggle()",
+                "help": "Поочередно выполняет вызов одной из нескольких заданных функций.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": "$.fx.off",
+                "help": "Отменяет выполнение всех анимаций.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D1%82%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": "$.fx.interval",
+                "help": "Размер задержки между соседними кадрами анимации.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BA%D0%B0%D0%B4%D1%80%D0%B0%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B9"
+            }
+        ],
+        "Готовые анимации": [
+            {
+                "name": ".hide()",
+                "help": "Скрывает элементы на странице (за счет плавного изменения его размера и прозрачности).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B8c%D1%87%D0%B5%D0%B7%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".show()",
+                "help": "Показывает элементы на странице (за счет плавного изменения его размера и прозрачности).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B8c%D1%87%D0%B5%D0%B7%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".slideUp()",
+                "help": "Сворачивает элементы на странице (за счет плавного изменения высоты элементов).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D1%81%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".slideDown()",
+                "help": "Разворачивает элементы на странице (за счет плавного изменения высоты элементов)",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D1%81%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".slideToggle()",
+                "help": "Поочередно разворачивает/сворачивает элементы на странице, как это делают .slideUp() и .slideDown().",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D0%BE%D0%B5%20%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D1%81%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".fadeIn()",
+                "help": "Скрывает элементы на странице за счет плавного изменения прозрачности.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B8c%D1%87%D0%B5%D0%B7%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B7%D0%B0%20%D1%81%D1%87%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8"
+            },
+            {
+                "name": ".fadeOut()",
+                "help": "Показывает элементы на странице за счет плавного изменения прозрачности.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B8c%D1%87%D0%B5%D0%B7%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B7%D0%B0%20%D1%81%D1%87%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8"
+            },
+            {
+                "name": ".fadeTo()",
+                "help": "Плавно изменяет прозрачность элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D1%83%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".fadeToggle()",
+                "help": "Поочередно скрывает/показывает элементы на странице, как это делают .fadeIn() и .fadeOut().",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%BF%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            }
+        ]
+    },
+    "Манипуляции": {
+        "Атрибуты": [
+            {
+                "name": ".attr()",
+                "help": "Позволяет получать и изменять значение атрибутов у элементов страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0%D0%BC%D0%B8"
+            },
+            {
+                "name": ".prop()",
+                "help": "Возвращает или изменяет значение свойств у выбранных элементов страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%D0%BE%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8"
+            },
+            {
+                "name": ".removeAttr()",
+                "help": "Удаляет атрибуты у выбранных элементов страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B0"
+            },
+            {
+                "name": ".removeProp()",
+                "help": "Удаляет свойства у выбранных элементах страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0"
+            },
+            {
+                "name": ".addClass()",
+                "help": "Добавляет класс(ы) выбранным элементам страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0"
+            },
+            {
+                "name": ".removeClass()",
+                "help": "Удаляет классы у выбранных элементов страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0"
+            },
+            {
+                "name": ".toggleClass()",
+                "help": "Изменяет наличие класса у выбранных элементов страницы на противоположное (добавляет/удаляет)",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D0%B0%D1%80%D1%8C%D0%B8%D1%80%D0%BE%D0%B2%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D1%8F%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0"
+            },
+            {
+                "name": ".hasClass()",
+                "help": "Проверяет наличие заданного класса хотя бы у одного из выбранных элементов",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9D%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B5%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0"
+            },
+            {
+                "name": ".val()",
+                "help": "Позволяет получать и изменять значение атрибута value у элементов страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%BE%D0%BC%20value"
+            }
+        ],
+        "Стили и параметры": [
+            {
+                "name": ".css()",
+                "help": "Позволяет получать и изменять css-значения у элементов страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20CSS"
+            },
+            {
+                "name": ".height()\n",
+                "help": "Позволяет получать и изменять значения высоты элемента (без учета отступов и толщины рамки)",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".outerHeight()\n",
+                "help": "Позволяет получить значения высоты элемента (с учетом внутренних отступов, рамки (border-width) и при необходимости внешних отступов (margin))",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".innerHeight()\n",
+                "help": "Позволяет получить значения высоты элемента (с учетом размера внутренних отступов (padding))",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".width()\n",
+                "help": "Позволяет получать и изменять значения ширины элемента (без учета отступов и толщины рамки)",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D1%88%D0%B8%D1%80%D0%B8%D0%BD%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".outerWidth()\n",
+                "help": "Позволяет получить значения ширины элемента (с учетом внутренних отступов, рамки (border-width) и при необходимости внешних отступов (margin))",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D1%88%D0%B8%D1%80%D0%B8%D0%BD%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".innerWidth()\n",
+                "help": "Позволяет получить значения ширины элемента (с учетом размера внутренних отступов (padding))",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D1%88%D0%B8%D1%80%D0%B8%D0%BD%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".offset()",
+                "help": "Позволяет получать и изменять позицию элемента, относительно начала страницы",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".position()",
+                "help": "Позволяет получать и изменять позицию элемента, относительно ближайшего родственника",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".offsetParent()",
+                "help": "Возвращает ближайшего предка c позиционированием, отличным от static (позиционирование по умолчанию)",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B"
+            },
+            {
+                "name": ".scrollTop()",
+                "help": "Позволяет получать и изменять значения вертикальной прокрутки элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%D0%BE%20%D1%81%D0%BA%D1%80%D0%BE%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3%D0%BE%D0%BC%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".scrollLeft()",
+                "help": "Позволяет получать и изменять значения горизонтальной прокрутки элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%D0%BE%20%D1%81%D0%BA%D1%80%D0%BE%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3%D0%BE%D0%BC%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            }
+        ],
+        "Клонирование элементов": [
+            {
+                "name": ".clone()",
+                "help": "Делает копию выбранных элементов страницы..",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            }
+        ],
+        "Замена элементов": [
+            {
+                "name": ".replaceWith()",
+                "help": "Заменяет одни элементы страницы на другие (новые или уже существующие).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".replaceAll()",
+                "help": "Заменяет одни элементы страницы на другие (новые или уже существующие).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            }
+        ],
+        "Добавление содержимого": [
+            {
+                "name": ".html()",
+                "help": "Позволяет получать и изменять html-содержимое выбранных элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20html-%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D1%8B%D0%BC%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".text()",
+                "help": "Позволяет получать и изменять текст внутри выбранных элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%BC%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D1%8B%D0%BC%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": ".append()",
+                "help": "Добавляет заданное содержимое в конец элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%B2%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%86%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".appendTo()",
+                "help": "Добавляет заданное содержимое в конец элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%B2%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%86%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".prepend()",
+                "help": "Добавляет заданное содержимое в начало элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%B2%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".prependTo()",
+                "help": "Добавляет заданное содержимое в начало элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%B2%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".after()",
+                "help": "Добавляет заданное содержимое после выбранных элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".insertAfter()",
+                "help": "Добавляет заданное содержимое после выбранных элементов на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".before()",
+                "help": "Добавляет заданное содержимое перед выбранными элементами на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8"
+            },
+            {
+                "name": ".insertBefore()",
+                "help": "Добавляет заданное содержимое перед выбранными элементами на странице",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8"
+            },
+            {
+                "name": ".wrap()",
+                "help": "Окружает элементы на странице заданными html-элементами",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B"
+            },
+            {
+                "name": ".wrapAll()",
+                "help": "Окружает элементы на странице заданными html-элементами",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B"
+            },
+            {
+                "name": ".wrapInner()",
+                "help": "Окружает содержимое выбранных элементов заданными html-элементами",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B"
+            }
+        ],
+        "Удаление содержимого": [
+            {
+                "name": ".remove()",
+                "help": "Удаляет выбранные элементы на странице.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".detach()",
+                "help": "Удаляет выбранные элементы на странице. Удаленные элементы могут быть восстановлены.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".empty()",
+                "help": "Удаляет содержимое элементов на странице.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%20%D1%83%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": ".unwrap()",
+                "help": "Удаляет родительские элементы, при этом их содержимое остается на месте.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D1%85%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2"
+            }
+        ]
+    },
+    "Ajax": {
+        "Запросы к серверу": [
+            {
+                "name": "$.get()",
+                "help": "Производит запрос к серверу методом GET.",
+                "link": "http://jquery.page2page.ru/index.php5/Ajax%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BC%20GET"
+            },
+            {
+                "name": "$.post()",
+                "help": "Производит запрос к серверу методом POST.",
+                "link": "http://jquery.page2page.ru/index.php5/Ajax%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BC%20POST"
+            },
+            {
+                "name": ".load()",
+                "help": "Производит запрос HTML-данных у сервера и помещает их в выбранные элементы страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/Ajax%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20HTML-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": "$.getJSON()",
+                "help": "Производит запрос JSON-данных у сервера методом GET",
+                "link": "http://jquery.page2page.ru/index.php5/Ajax%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20JSON-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": "$.getScript()",
+                "help": "Производит запрос файла javascript методом GET, а затем выполняет код из полученного файла.",
+                "link": "http://jquery.page2page.ru/index.php5/Ajax%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20js%20%D1%84%D0%B0%D0%B9%D0%BB%D0%B0"
+            }
+        ],
+        "Низкоуровневые запросы": [
+            {
+                "name": "$.ajax()",
+                "help": "Производит асинхронный ajax-запрос с установленными параметрами.",
+                "link": "http://jquery.page2page.ru/index.php5/Ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81"
+            },
+            {
+                "name": "$.ajaxSetup()",
+                "help": "Устанавливает параметры для ajax-запроса, которые будут использоваться по умолчанию.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0"
+            }
+        ],
+        "Ajax-события": [
+            {
+                "name": ".ajaxSend()",
+                "help": "Устанавливает пользовательскую функцию, которая будет вызвана при отправке ajax-запроса.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0"
+            },
+            {
+                "name": ".ajaxComplete()",
+                "help": "Устанавливает пользовательскую функцию, которая будет вызвана при завершении ajax-запроса.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0"
+            },
+            {
+                "name": ".ajaxSuccess()",
+                "help": "Устанавливает пользовательскую функцию, которая будет вызвана при удачном завершении ajax-запроса.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D1%83%D0%B4%D0%B0%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0"
+            },
+            {
+                "name": ".ajaxError()",
+                "help": "Устанавливает пользовательскую функцию, которая будет вызвана при неудачном завершении ajax-запроса.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BD%D0%B5%D1%83%D0%B4%D0%B0%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0"
+            },
+            {
+                "name": ".ajaxStart()",
+                "help": "Устанавливает пользовательскую функцию, которая будет вызвана перед выполнением первого ajax-запроса.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B0"
+            },
+            {
+                "name": ".ajaxStop()",
+                "help": "Устанавливает пользовательскую функцию, которая будет вызвана после выполнения всех запущенных ajax-запросов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B2%D1%81%D0%B5%D1%85%20ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2"
+            }
+        ],
+        "Вспомогательные функции": [
+            {
+                "name": "$.param()",
+                "help": "Преобразует массив объектов в строку, пригодную для использования в URL.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B2%20url"
+            },
+            {
+                "name": ".serialize()",
+                "help": "Преобразует данные формы в строку, пригодную для использования в URL.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B%20%D0%B2%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D1%83"
+            },
+            {
+                "name": ".serializeArray()",
+                "help": "Преобразует данные формы в массив объектов вида {name:\"name\", value:\"val\"}",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2"
+            }
+        ]
+    },
+    "Коллбэки": {
+        "Объекты Deferred": [
+            {
+                "name": "deferred",
+                "help": "Объект, который хранит состояние выполнения пользовательских задач, а так же помогает отслеживать изменения этого состояния с помощью обработчиков.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%20deferred"
+            },
+            {
+                "name": ".done()",
+                "help": "Устанавливает обработчик перехода объекта deferred в состояние \"удачно выполнено\".",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20deferred"
+            },
+            {
+                "name": ".fail()",
+                "help": "Устанавливает обработчик перехода объекта deferred в состояние \"ошибка выполнения\".",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20deferred"
+            },
+            {
+                "name": ".then()",
+                "help": "Устанавливает два обработчика смены состояния объекта deferred. Один будет реагировать на переход в \"удачно выполнено\", а второй в \"ошибка выполнения\".",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20deferred"
+            },
+            {
+                "name": ".always()",
+                "help": "Устанавливает один (общий) обработчик, реагирующий на переход объекта deferred в любое из двух состояний (\"удачно выполнено\" и \"ошибка выполнения\").",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20deferred"
+            },
+            {
+                "name": ".progress()",
+                "help": "установливает обработчики прогресса выполнения объекта deferred.",
+                "link": "http://jquery.page2page.ru/index.php5/Progress"
+            },
+            {
+                "name": ".resolve()",
+                "help": "Изменяет состояние объекта deferred на \"удачно выполнено\".",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20deferred"
+            },
+            {
+                "name": ".resolveWith()",
+                "help": "Изменяет состояние объекта deferred на \"ошибка выполнения\", с указанием контекста выполнения.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20deferred"
+            },
+            {
+                "name": ".reject()",
+                "help": "Изменяет состояние объекта deferred на \"ошибка выполнения\".",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20deferred"
+            },
+            {
+                "name": ".rejectWith()",
+                "help": "Изменяет состояние объекта deferred на \"ошибка выполнения\", с указанием контекста выполнения.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20deferred"
+            },
+            {
+                "name": ".notify()",
+                "help": "Вызывает событие промежуточного выполнения deferred (прогресса выполнения).",
+                "link": "http://jquery.page2page.ru/index.php5/Notify"
+            },
+            {
+                "name": ".notifyWith()",
+                "help": "Вызывает событие промежуточного выполнения deferred (прогресса выполнения). При этом, есть возможность задать контекст выполнения в обработчике.",
+                "link": "http://jquery.page2page.ru/index.php5/Deferred.notifyWith"
+            },
+            {
+                "name": ".isResolved()",
+                "help": "Проверяет находится ли объект deferred в состоянии удачного выполнения.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B9%20deferred"
+            },
+            {
+                "name": ".isRejected()",
+                "help": "Проверяет находится ли объект deferred в состоянии ошибки выполнения.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B9%20deferred"
+            },
+            {
+                "name": ".state()",
+                "help": "Возвращает текущее состояние объекта deffered в виде строки..",
+                "link": "http://jquery.page2page.ru/index.php5/Deferred.state"
+            },
+            {
+                "name": ".promise()",
+                "help": "Создает promise-версию (заместителя) объекта deferred.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20deferred"
+            },
+            {
+                "name": ".pipe()",
+                "help": "Позволяет проводить предварительную обработку параметров, которые будут передаваться в обработчики смены состояния объекта deffered.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2%20deferred-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2"
+            }
+        ],
+        "Объекты Callbacks": [
+            {
+                "name": "callbacks",
+                "help": "Возвращяет DOM-элементы, хранящиеся в объекте jQuery.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%20callbacks"
+            },
+            {
+                "name": ".add()",
+                "help": "Добавляет заданную функцию/функции в список функций callbacks-объекта.",
+                "link": "http://jquery.page2page.ru/index.php5/callbacks.add"
+            },
+            {
+                "name": ".disable()",
+                "help": "Блокирует текущий объект callbacks, отключая возможность выполнений его списка функций.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.disable"
+            },
+            {
+                "name": ".empty()",
+                "help": "Очищает список функций в текущем объекте callbacks.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.empty"
+            },
+            {
+                "name": ".fire()",
+                "help": "Выполняет все функции из списка функций callbacks-объекта.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.fire"
+            },
+            {
+                "name": ".fireWith()",
+                "help": "Выполняет все функции из списка функций callbacks-объекта. При этом, в первом аргументе метода задается значение, которое будет доступно в переменной this, внутри всех вызываемых функций.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.fireWith"
+            },
+            {
+                "name": ".fired()",
+                "help": "Проверяет, выполнялся ли текущий объект callbacks хотя бы один раз.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.fired"
+            },
+            {
+                "name": ".has()",
+                "help": "Проверяет наличие заданной функции в списке функций текущего объекта callbacks.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.has"
+            },
+            {
+                "name": ".remove()",
+                "help": "Удаляет заданную функцию/функции из списка функций текущего объекта callbacks.",
+                "link": "http://jquery.page2page.ru/index.php5/Callbacks.remove"
+            }
+        ]
+    },
+    "Остальное": {
+        "Функции ядра": [
+            {
+                "name": "jQuery() или $()",
+                "help": "Создает объект jQuery, который содержит список выбранных элементов и имеет массу методов, для работы с этими элементами.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%20jQuery"
+            },
+            {
+                "name": "$.noConflict()",
+                "help": "Освобождает переменную $, чтобы избежать конфликтов имен.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%80%D0%B5%D0%B4%D1%83%D0%BF%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%BB%D0%B8%D0%BA%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": "$.sub()",
+                "help": "Создает копию глобального объекта jQuery, давая возможность изменять методы и параметры созданной копии, не затрагивая оригинал.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20jQuery"
+            },
+            {
+                "name": "$.when()",
+                "help": "На основе нескольких заданных объектов (обычно deferred), функция $.when() создает новый deferred-объект, следящий за состоянием всех заданных.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%BE%D0%B2%D0%BE%D0%B9%20deferred"
+            }
+        ],
+        "Работа с данными": [
+            {
+                "name": ".data()",
+                "help": "Устанавливает/возвращяет пользовательские переменные выбранным элементам страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": ".removeData()",
+                "help": "Удаляет пользовательские переменные у выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": "$.hasData()",
+                "help": "Проверяет, закреплены ли данные за указанным элементом страницы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9D%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            }
+        ],
+        "Свойства": [
+            {
+                "name": "$.browser",
+                "help": "Информация об используемом браузере (перед использованием этого свойства попробуйте найти интересующую вас особенность в свойстве support, эта информация будет более надежна).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%B8%D0%BF%20%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0"
+            },
+            {
+                "name": "$.support",
+                "help": "Особенности используемого браузера.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D0%BC%D0%BE%D0%B3%D0%BE%20%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0"
+            },
+            {
+                "name": "$.fx.off",
+                "help": "Отменяет выполнение всех анимаций.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D1%82%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": "$.fx.interval",
+                "help": "Размер задержки между соседними кадрами анимации.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%94%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BA%D0%B0%D0%B4%D1%80%D0%B0%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B9"
+            },
+            {
+                "name": ".context",
+                "help": "Контекст, заданный в методе $() (jQuery()).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F"
+            },
+            {
+                "name": ".length",
+                "help": "Число выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A7%D0%B8%D1%81%D0%BB%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B2%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B5"
+            },
+            {
+                "name": ".selector",
+                "help": "Селектор, заданный в методе $() (jQuery()).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B9%20%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80"
+            }
+        ],
+        "Элементы набора": [
+            {
+                "name": ".get()",
+                "help": "Возвращяет DOM-элементы, хранящиеся в объекте jQuery.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%20jQuery"
+            },
+            {
+                "name": ".toArray()",
+                "help": "Возвращяет все DOM-элементы, хранящиеся в объекте jQuery, в виде массива.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20jQuery%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2"
+            },
+            {
+                "name": ".index()",
+                "help": "Возвращяет индекс заданного элемента в наборе.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B5"
+            },
+            {
+                "name": ".size()",
+                "help": "Возвращяет количество выбранных элементов.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D0%B0"
+            }
+        ],
+        "Утилиты": [
+            {
+                "name": "$.contains()",
+                "help": "Проверяет, содержится ли один элемент страницы внутри другого.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9D%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0"
+            },
+            {
+                "name": "$.extend()",
+                "help": "Объединяет содержимое двух или более заданных javascript-объектов. Результат объединения записывается в первый из этих объектов (он же будет возвращен в качестве результата выполнения функции).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2"
+            },
+            {
+                "name": "$.globalEval()",
+                "help": "Выполняет заданный скрипт в глобальной области видимости. Отличие от стандартного javascript-метода eval() заключается в глобальной области выполнения, что является важным нюансом, например, когда нужно выполнить динамически подгруженную библиотеку.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%93%D0%BB%D0%BE%D0%B1%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0"
+            },
+            {
+                "name": "$.grep()",
+                "help": "Ищет в заданном массиве элементы, удовлетворяющие условиям фильтрующей функции. Возвращает массив с найденными элементами.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B0"
+            },
+            {
+                "name": "$.inArray()",
+                "help": "Ищет заданный элемент в массиве. Возвращает индекс этого элемента или -1 в случае его отсутствия.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B5"
+            },
+            {
+                "name": "$.isArray()",
+                "help": "Проверяет, является ли заданный элемент массивом.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BB%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BE%D0%BC"
+            },
+            {
+                "name": "$.isEmptyObject()",
+                "help": "Проверяет, является ли заданный объект пустым.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%83%D1%81%D1%82%20%D0%BB%D0%B8%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82"
+            },
+            {
+                "name": "$.isFunction()",
+                "help": "Проверяет, является ли заданный элемент функцией.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BB%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B5%D0%B9"
+            },
+            {
+                "name": "$.isPlainObject()",
+                "help": "Проверяет, является ли заданный элемент пользовательским объектом, то есть он был задан пользователем именно в роли объекта (посредством \"{}\" или \"new Object\")(дело в том, что многие величины (например строки) в javascript являются объектами, однако они не задаются объектами явным образом).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BB%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%BC%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%BC"
+            },
+            {
+                "name": "$.isWindow()",
+                "help": "Проверяет, является ли заданный элемент объектом типа window (объекты фреймов тоже принадлежат к этому типу).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BB%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%BC%20window"
+            },
+            {
+                "name": "$.isXMLDoc()",
+                "help": "Проверяет, находится ли DOM-объект внутри XML-документа (или сам является XML-документом).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BB%D0%B8%20DOM-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%D1%8E%20XML"
+            },
+            {
+                "name": "$.makeArray()",
+                "help": "Конвертирует массивоподобные объекты, в массивы.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2"
+            },
+            {
+                "name": "$.merge()",
+                "help": "Объединяет содержимое двух массивов. Результат объединения записывается в первый из этих массивов (он же будет возвращен в качестве результата выполнения функции). ",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BE%D0%B2"
+            },
+            {
+                "name": "$.noop()",
+                "help": "Пустая функция (т. е. которая ничего не делает).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D1%83%D1%81%D1%82%D0%B0%D1%8F%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F"
+            },
+            {
+                "name": "$.parseJSON()",
+                "help": "Конвертирует строку с json-данными в javascript-объект.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B0%D1%80%D1%81%D0%B8%D0%BD%D0%B3%20json-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+            },
+            {
+                "name": "$.parseXML()",
+                "help": "Конвертирует строку с xml-данными в xml-документ.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9F%D0%B0%D1%80%D1%81%D0%B8%D0%BD%D0%B3%20xml-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8"
+            },
+            {
+                "name": "$.trim()",
+                "help": "Удаляет символы пробелов, табов и переносов строк из начала и конца строки.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D1%80%D0%B0%D0%B9%D0%BD%D0%B8%D1%85%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D0%BE%D0%B2"
+            },
+            {
+                "name": "$.type()",
+                "help": "Определяет класс заданного элемента (речь идет о внутренних классах javascript: string, boolean и т.д.).",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%9E%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0"
+            },
+            {
+                "name": "$.unique()",
+                "help": "Сортирует массив с DOM-элементами, выстраивая их в порядке расположения в DOM, а так же удаляя повторения.",
+                "link": "http://jquery.page2page.ru/index.php5/%D0%A3%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20DOM-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B2%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B5"
+            }
+        ]
+    }
+}
