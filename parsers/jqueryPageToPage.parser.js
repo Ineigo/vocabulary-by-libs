@@ -1,3 +1,6 @@
+/**
+ * Снипет в консоль браузера, распечатает все подсказки с карты функций сайта http://jquery.page2page.ru/
+ */
 (() => {
     const els = document.querySelectorAll('.itArea:not(#jqueryui) .col .it, .itArea:not(#jqueryui) .col h4');
     
