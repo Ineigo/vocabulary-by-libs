@@ -11,7 +11,7 @@ module.exports = {
     },
 
     output: {
-        filename: '[name].[chunkhash].js',
+        filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist'),
     },
 
@@ -36,6 +36,18 @@ module.exports = {
             {
                 test: /\.(scss|css)$/,
                 use: [MiniCssExtractPlugin.loader, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [
+                    { loader: 'file-loader' },
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                        },
+                    },
+                ],
             },
         ],
     },
