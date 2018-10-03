@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: './client/index.js',
+        app: ['babel-polyfill', './client/index.js'],
     },
 
     output: {
@@ -29,13 +29,27 @@ module.exports = {
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env'],
-                    plugins: [require('@babel/plugin-proposal-object-rest-spread')],
+                    plugins: [
+                        require('@babel/plugin-proposal-object-rest-spread'),
+                        require('@babel/plugin-transform-async-to-generator'),
+                    ],
                 },
                 test: /\.js$/,
             },
             {
                 test: /\.(scss|css)$/,
-                use: [MiniCssExtractPlugin.loader, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+                use: [
+                    process.env.NODE_ENV !== 'production' ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            sourceMap: true,
+                            localIdentName: '[name]__[local]___[hash:base64:5]',
+                        },
+                    },
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
@@ -55,8 +69,8 @@ module.exports = {
     mode: 'development',
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new UglifyJSPlugin(),
         new VueLoaderPlugin(),
+        new UglifyJSPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css',
         }),
@@ -89,8 +103,18 @@ module.exports = {
             name: true,
         },
     },
-
+    devtool: 'source-map',
     devServer: {
+        before(app) {
+            app.get('/list', (req, res) => {
+                // Get params: req.query
+                res.json(['jquery.data.json']);
+            });
+            app.get('/test', (req, res) => {
+                // Get params: req.query
+                res.json(req.query);
+            });
+        },
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000,

@@ -1,28 +1,21 @@
 <template>
-    <div>
-        <h1>{{ message }}</h1>
-        <base-input name="text" value="123" placeholder="sadd" @change="change" />
-    </div>
+    <top-bar />
 </template>
 
 <script>
-import BaseInput from './components/base-input/BaseInput.vue';
+import TopBar from './components/top-bar/TopBar.vue';
 import style from './main.style.scss';
 
 export default {
     name: 'Application',
     components: {
-        BaseInput,
+        TopBar
     },
     data() {
-        return {
-            message: 'Hello !!!',
-        };
+        return {};
     },
-    methods: {
-        change(e) {
-            console.log(e)
-        }
-    }
 };
 </script>
+
+<style module>
+</style>
