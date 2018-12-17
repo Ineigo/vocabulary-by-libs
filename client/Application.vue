@@ -2,20 +2,16 @@
     <top-bar />
 </template>
 
-<script>
+<script lang="ts">
 import TopBar from './components/top-bar/TopBar.vue';
-import style from './main.style.scss';
 
 export default {
     name: 'Application',
     components: {
-        TopBar
+        TopBar,
     },
     data() {
         return {};
     },
 };
 </script>
-
-<style module>
-</style>

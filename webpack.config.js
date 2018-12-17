@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: ['babel-polyfill', './client/index.js'],
+        app: ['babel-polyfill', './client/index.ts'],
     },
 
     output: {
@@ -22,19 +22,35 @@ module.exports = {
                 loader: 'vue-loader',
                 options: {
                     extractCSS: true,
+                    loaders: {
+                        // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
+                        // the "scss" and "sass" values for the lang attribute to the right configs here.
+                        // other preprocessors should work out of the box, no loader config like this necessary.
+                        scss: 'vue-style-loader!css-loader!sass-loader',
+                        sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+                    },
+                    // other vue-loader options go here
                 },
             },
+            // {
+            //     include: [path.resolve(__dirname, 'client')],
+            //     loader: 'babel-loader',
+            //     options: {
+            //         presets: ['@babel/preset-env'],
+            //         plugins: [
+            //             require('@babel/plugin-proposal-object-rest-spread'),
+            //             require('@babel/plugin-transform-async-to-generator'),
+            //         ],
+            //     },
+            //     test: /\.js$/,
+            // },
             {
-                include: [path.resolve(__dirname, 'client')],
-                loader: 'babel-loader',
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
                 options: {
-                    presets: ['@babel/preset-env'],
-                    plugins: [
-                        require('@babel/plugin-proposal-object-rest-spread'),
-                        require('@babel/plugin-transform-async-to-generator'),
-                    ],
+                    appendTsSuffixTo: [/\.vue$/],
                 },
-                test: /\.js$/,
             },
             {
                 test: /\.(scss|css)$/,
@@ -83,6 +99,7 @@ module.exports = {
     ],
 
     resolve: {
+        extensions: ['.ts', '.js', '.vue', '.json'],
         alias: {
             vue: 'vue/dist/vue.js',
         },
@@ -103,7 +120,7 @@ module.exports = {
             name: true,
         },
     },
-    devtool: 'source-map',
+    devtool: '#eval-source-map',
     devServer: {
         before(app) {
             app.get('/list', (req, res) => {
@@ -117,6 +134,6 @@ module.exports = {
         },
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 9000,
+        port: 9011,
     },
 };

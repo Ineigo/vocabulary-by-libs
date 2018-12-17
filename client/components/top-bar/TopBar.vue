@@ -6,12 +6,7 @@
         </div>
         <div>
             <select v-if="list.length" v-model="activePreset">
-                <option v-for="preset in list" 
-                    :key="preset" 
-                    :value="preset"
-                >
-                    {{preset}}
-                </option>
+                <option v-for="preset in list" :key="preset" :value="preset"> {{ preset }} </option>
             </select>
         </div>
     </div>
@@ -19,7 +14,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import { get } from '../../core/Http.js';
+import { get } from '../../core/Http';
 import BaseInput from '../base-input/BaseInput.vue';
 
 export default {
@@ -43,20 +38,19 @@ export default {
             },
             set(value) {
                 this.$store.commit('activate', value);
-            }
-        }
+            },
+        },
     },
 
     methods: {
-        change(e) {
-        }
+        change(e) {},
     },
 };
 </script>
 
 <style lang="scss" module>
-    .top-bar {
-        display: flex;
-        justify-content: space-between;
-    }
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+}
 </style>

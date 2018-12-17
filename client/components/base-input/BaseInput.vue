@@ -1,10 +1,5 @@
 <template>
-    <input
-        class="input"
-        v-bind:value="value"
-        v-bind="$attrs"
-        v-on="listeners"
-    />
+    <input class="input" v-bind="$attrs" v-bind:value="value" v-on="listeners">
 </template>
 
 <script>
@@ -23,5 +18,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
