@@ -1,8 +1,9 @@
 {
-    "include": ["./client/**/*.ts"],
+    "include": ["./client/**/*.json", "./client/**/*.ts"],
     "exclude": ["node_modules"],
     "compilerOptions": {
         "outDir": "./built/",
+        "resolveJsonModule": true,
         "sourceMap": true,
         // это соответствует поддержке браузеров у Vue
         "target": "es5",

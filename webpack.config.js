@@ -32,18 +32,6 @@ module.exports = {
                     // other vue-loader options go here
                 },
             },
-            // {
-            //     include: [path.resolve(__dirname, 'client')],
-            //     loader: 'babel-loader',
-            //     options: {
-            //         presets: ['@babel/preset-env'],
-            //         plugins: [
-            //             require('@babel/plugin-proposal-object-rest-spread'),
-            //             require('@babel/plugin-transform-async-to-generator'),
-            //         ],
-            //     },
-            //     test: /\.js$/,
-            // },
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
