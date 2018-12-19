@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import { get } from './core/Http';
 import Application from './Application.vue';
-import { ToolBarState } from './types/ToolBarState';
+import { ToolBarState } from './types/IToolBarState';
 
 Vue.use(Vuex);
 const state: ToolBarState = {

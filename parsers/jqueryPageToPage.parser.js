@@ -3,16 +3,19 @@
  */
 (() => {
     const els = document.querySelectorAll('.itArea:not(#jqueryui) .col .it, .itArea:not(#jqueryui) .col h4');
-    
+//     console.log(els)
    let lastH4 = null;
     const data = Array.prototype.reduce.call(els, (prev, cur) => {
        const groopEl = cur.closest('.itArea').querySelector('h2');
-       if (!prev[groopEl.innerText]) {
-           prev[groopEl.innerText] = {};
+       if (!prev.find(({ title }) => title === groopEl.innerText)) {
+           prev.push({ title: groopEl.innerText, items: [] })
        }
 
        if (cur.tagName === 'H4') {
-            prev[groopEl.innerText][cur.innerText] = [];
+            prev.find(({ title }) => title === groopEl.innerText).items.push({
+                title: cur.innerText,
+                items: [],
+            });
             lastH4 = cur.innerText;
        }
 
@@ -22,9 +25,11 @@
               help: cur.querySelector('.tx').innerText,
               link: cur.querySelector('a').href,
            };
-           prev[groopEl.innerText][lastH4].push(item);
+           prev
+            .find(({ title }) => title === groopEl.innerText).items
+            .find(({ title }) => title === lastH4).items.push(item);
        }
        return prev;
-    }, {});
+    }, []);
     return JSON.stringify(data);
 })();

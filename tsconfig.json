@@ -9,10 +9,13 @@
         "target": "es5",
         // это обеспечивает более строгий вывод для свойств данных в `this`
         "strict": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "noImplicitReturns": true,
+        "allowSyntheticDefaultImports": true,
         // при использовании webpack 2+ или rollup, добавить поддержку tree-shaking:
         "module": "es2015",
         "moduleResolution": "node",
-        "lib": ["es7"]
+        "lib": ["es7", "dom"]
     }
 }
