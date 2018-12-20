@@ -4,22 +4,13 @@
     </div>
 </template>
 <script lang="ts">
-import Vue from 'vue';
+import { Component, Vue, Prop } from 'vue-property-decorator';
 import CardGroup from './CardGroup';
 import CardItem from './CardItem';
 
-export default {
-    name: 'CardList',
-
-    props: {
-        data: { type: CardGroup, required: true },
-    },
-
-    data() {
-        return {
-            query: '',
-        };
-    },
+@Component
+export default class CardList extends Vue {
+    @Prop({ type: CardGroup, required: true }) data!: CardGroup;
 };
 </script>
 <style lang="scss" module>

@@ -9,6 +9,7 @@
         "target": "es5",
         // это обеспечивает более строгий вывод для свойств данных в `this`
         "strict": true,
+        "strictPropertyInitialization": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noImplicitReturns": true,

@@ -1,50 +1,39 @@
 <template>
     <div :class="$style['top-bar']">
         <div>
-            <base-input name="search" v-model="query" placeholder="Поиск" @change="change" />
+            <base-input @change="change" name="search" placeholder="Поиск" v-model="query"/>
             <button @click="change">Искать</button>
         </div>
         <div>
             <select v-if="list.length" v-model="activePreset">
-                <option v-for="preset in list" :key="preset" :value="preset"> {{ preset }} </option>
+                <option :key="preset" :value="preset" v-for="preset in list">{{ preset }}</option>
             </select>
         </div>
     </div>
 </template>
 
-<script>
-import { mapState } from 'vuex';
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator';
+import { Getter, Mutation, State } from 'vuex-class'
 import { get } from '../../core/Http';
 import BaseInput from '../base-input/BaseInput.vue';
 
-export default {
-    name: 'TopBar',
+@Component({ components: { BaseInput } })
+export default class TopBar extends Vue {
+    query: String = '';
+    @State('presetList') list: String[];
+    @State('activePreset') active: String;
 
-    data() {
-        return {
-            query: '',
-        };
-    },
+    get activePreset(): String {
+        return this.active;
+    }
+    set activePreset(value: String) {
+        this.$store.commit('activate', value);
+    }
 
-    components: {
-        BaseInput,
-    },
-
-    computed: {
-        ...mapState({ list: 'presetList', active: 'activePreset' }),
-        activePreset: {
-            get() {
-                return this.active;
-            },
-            set(value) {
-                this.$store.commit('activate', value);
-            },
-        },
-    },
-
-    methods: {
-        change(e) {},
-    },
+    change(e : Event) {
+        console.log(this.list);
+    }
 };
 </script>
 

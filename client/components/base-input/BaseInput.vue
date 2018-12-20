@@ -2,19 +2,18 @@
     <input class="input" v-bind="$attrs" v-bind:value="value" v-on="listeners">
 </template>
 
-<script>
-export default {
-    name: 'BaseInput',
-    inheritAttrs: false,
-    props: ['value'],
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator';
 
-    computed: {
-        listeners: function() {
-            return Object.assign({}, this.$listeners, {
-                input: event => this.$emit('input', event.target.value),
-            });
-        },
-    },
+@Component({ inheritAttrs: false })
+export default class BaseInput extends Vue {
+    @Prop([String,Number]) value!: String | Number;
+
+    get listeners() {
+        return Object.assign({}, this.$listeners, {
+            input: (event: Event) => this.$emit('input', (<HTMLInputElement>event.target).value),
+        });
+    }
 };
 </script>
 
