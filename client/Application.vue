@@ -1,6 +1,6 @@
 <template>
     <div :class="[$style['application']]">
-        <top-bar @search="findCard" />
+        <top-bar/>
         <div :class="[$style['application__groups']]">
             <card-list :key="card.title" v-for="card in drawCards" :data="card"/>
         </div>
@@ -9,6 +9,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { Getter, Mutation, State } from 'vuex-class';
 import TopBar from './components/top-bar/TopBar.vue';
 import CardList from './components/card-list/CardList.vue';
 import list from './data/jquery.data.json';
@@ -21,30 +22,32 @@ import Card from './components/card-list/Card';
 @Component({ components: { TopBar, CardList } })
 export default class Application extends Vue {
     cards: CardGroup[];
-    drawCards: CardGroup[];
-    query: string;
+    get drawCards(): CardGroup[] {
+        return this.findCard(this.query);
+    }
+    
+    @State('query') query: string;
 
     constructor(...args: any[]) {
         super(...args);
         const jsonConvert: JsonConvert = new JsonConvert();
         this.cards = (<any>jsonConvert).deserialize(list, CardGroup);
-        this.drawCards = this.cards;
     }
 
-    findCard(query: string) {
-        this.query = query;
+    findCard(query: string): CardGroup[] {
         let finded: CardGroup[] = [];
         if (!query.length) {
-            this.drawCards = this.cards;
-            return;
+            return this.cards;
         }
         for (let card of this.cards) {
             const findedItems = this.findCardItems(query, <Card[]> card.items);
-            if (card.title.includes(query) || findedItems.length) {
+            if (findedItems.length) {
                 finded.push(new CardGroup(card.title, findedItems));
+            } else if (card.title.includes(query)) {
+                finded.push(new CardGroup(card.title, card.items));
             }
         }
-        this.drawCards = finded.length ? finded : this.cards;
+        return finded.length ? finded : this.cards;
     }
 
     findCardItems(query: string, items: Card[]) : Card[] {

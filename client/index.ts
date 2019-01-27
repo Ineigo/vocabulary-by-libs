@@ -6,6 +6,7 @@ import IToolBarState from './types/IToolBarState';
 
 Vue.use(Vuex);
 const state: IToolBarState = {
+    query: '',
     presetList: [],
     activePreset: null
 };
@@ -18,6 +19,9 @@ const store = new Vuex.Store({
         activate(state: IToolBarState, value: string) {
             state.activePreset = state.presetList.find((el: string) => el === value) || null;
         },
+        search(state: IToolBarState, value: string) {
+            state.query = value;
+        }
     },
     actions: {
         update(context) {
