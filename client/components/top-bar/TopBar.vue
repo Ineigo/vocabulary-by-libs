@@ -32,7 +32,7 @@ export default class TopBar extends Vue {
     }
 
     change(e : Event) {
-        console.log(this.list);
+        this.$emit('search', this.query);
     }
 };
 </script>
