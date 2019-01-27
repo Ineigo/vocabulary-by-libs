@@ -42,6 +42,8 @@ export default class TopBar extends Vue {
 
 <style lang="scss" module>
 .top-bar {
+    margin: 0 auto;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
 }
