@@ -22,7 +22,8 @@ export default class CardList extends Vue {
         width: 270px;
         flex-direction: column;
         margin: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
         background: #fafafa;
         
         &__title {

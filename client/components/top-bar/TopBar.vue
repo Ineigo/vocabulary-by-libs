@@ -1,12 +1,14 @@
 <template>
     <div :class="$style['top-bar']">
         <div>
-            <base-input name="search" placeholder="Поиск" v-model="query"/>
+            <base-input :class="[$style['top-bar__input']]" name="search" placeholder="Поиск" v-model="query"/>
         </div>
         <div>
-            <select v-if="list.length" v-model="activePreset">
+            <select :class="[$style['top-bar__select']]" v-if="list.length" v-model="activePreset">
                 <option :key="preset" :value="preset" v-for="preset in list">{{ preset }}</option>
             </select>
+            <input id="add-json" :class="[$style['top-bar__file']]" type="file" accept=".json" />
+            <label for="add-json" :class="[$style['top-bar__button']]">+</label>
         </div>
     </div>
 </template>
@@ -37,6 +39,10 @@ export default class TopBar extends Vue {
     set activePreset(value: String) {
         this.$store.commit('activate', value);
     }
+
+    onClickAddJSON() {
+        console.log('pick file');
+    }
 };
 </script>
 
@@ -46,5 +52,30 @@ export default class TopBar extends Vue {
     max-width: 500px;
     display: flex;
     justify-content: space-between;
+
+    &__file {
+        display: none;
+    }
+
+    &__select,
+    &__input,
+    &__button {
+        border-radius: 2px;
+        border: 1px solid #e6e6e6;
+        box-sizing: border-box;
+        background: white;
+        color: #ccc;
+        cursor: pointer;
+        display: inline-block;
+        height: 21px;
+        padding: 1px 6px;
+        vertical-align: top;
+        
+        &:hover {
+            border-color: #55555560;
+            color: #555;
+            background: #fafafa;
+        }
+    }
 }
 </style>
